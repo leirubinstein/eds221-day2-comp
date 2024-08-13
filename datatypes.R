@@ -86,3 +86,10 @@ fruit
 fruit$type
 fruit$mass
 
+dogs <- data.frame(name = c("teddy", "khora", "waffle", "waffle"),
+                   age = c(1, 2, 3, 4))
+
+dogs[dogs$name == "waffle",]$age
+dogs[dogs$name == "waffle" & dogs$age == 3,]
+dogs[3,]
+
